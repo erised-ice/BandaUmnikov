@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/proximanova-bold.woff2") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "UmnikBold";
   src: url("../fonts/umnik-bold.woff2") format("woff");
   font-style: normal;
@@ -62,7 +69,58 @@ body {
 }
 
 .sale__item--yellow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background: url("../img/template/yellow-background.png");
+}
+
+.sale__picture {
+  position: relative;
+  display: block;
+  width: 100%;
+  flex: 0 0 251px;
+  padding: 12px 42px 13px 15px;
+  text-align: center;
+}
+
+.sale__picture:after {
+  content: '';
+  position: absolute;
+  background: url("../img/content/gift.png");
+  width: 106px;
+  height: 119px;
+  top: 0;
+  right: 0;
+}
+
+.sale__article {
+  flex: 1 1;
+  padding: 22px 25px 24px 0;
+}
+
+.sale__title  {
+  color: #000;
+  font-family: ProximaNovaBold;
+  font-size: 31px;
+  margin-bottom: 13px;
+}
+
+.sale__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-new {
+  font-family: ProximaNovaBold;
+  color: #ff0072;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.price-old {
+  text-transform: uppercase;
 }
 
 .sale__item--violet {
@@ -79,6 +137,12 @@ body {
 
 @media (max-width: 1023px) {
   .sale__item {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 599px) {
+  .sale__picture {
     flex: 1 1 100%;
   }
 }
