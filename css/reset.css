@@ -144,10 +144,13 @@ a {
 }
 
 @media (min-width: 1024px) {
-  button:hover,
   input[type=submit]:hover {
     cursor: pointer;
     opacity: 0.8;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }
 

@@ -48,13 +48,33 @@ body {
   background: pink;
 }
 
+.sale__button {
+  width: 142px;
+  height: 43px;
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+  background-color: #ff0072;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.42px;
+  text-transform: uppercase;
+}
+
 .sale__item--yellow {
   background: url("../img/template/yellow-background.png");
 }
 
-.sale__link {
-  width: 100%;
-  height: 100%;
+.sale__item--violet {
+  background: url("../img/content/banner-2.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sale__button--right {
+  position: absolute;
+  right: 33px;
+  bottom: 22px;
 }
 
 @media (max-width: 1023px) {
