@@ -1,0 +1,240 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+@media (min-width: 1024px) {
+  button:hover,
+  input[type=submit]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 1024px) {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+  outline: none;
+}
+
+.clear {
+  clear: both;
+}
+
+html,
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  width: 100%;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0 0 20px 0;
+  border: solid 1px #e8e8e8;
+}
+
+table th,
+table thead td,
+table thead th {
+  color: #222222;
+  font-weight: bold;
+}
+
+table td,
+table th {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+ul li,
+ol li {
+  line-height: 22px;
+}
+
+section p,
+article p {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent !important
+}
