@@ -28,21 +28,23 @@
 
 body {
   min-width: 320px;
-  font-family: ProximaNovaRegular;
-  color: #000;
+  font-family: "ProximaNovaRegular", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
+  color: #000;
 }
 
 .inner {
   width: 100%;
   max-width: 1212px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 .sale__inner {
-  padding: 34px 20px 51px;
+  padding-top: 34px;
+  padding-bottom: 51px;
 }
 
 .sale__title {
@@ -72,6 +74,8 @@ body {
   text-transform: uppercase;
   padding: 13px 16px;
   margin-left: 7px;
+  display: block;
+  transition: 0.25s ease-out background-color;
 }
 
 .sale__item--left {
@@ -105,17 +109,17 @@ body {
 }
 
 .sale__article {
-  flex: 1 1;
+  flex: 1 1 0;
   margin-left: 42px;
 }
 
 .sale__capture  {
-  font-family: ProximaNovaSemibold;
+  font-family: "ProximaNovaSemibold";
   font-size: 31px;
   margin: 4px 0 9px;
   line-height: 1.2;
   letter-spacing: -1px;
-  flex: 0 1;
+  flex: 0 1 0;
 }
 
 .timer {
@@ -142,7 +146,7 @@ body {
   height: 55px;
   border-radius: 5px;
   background-color: #fff;
-  font-family: UmnikBold;
+  font-family: "UmnikBold";
   font-size: 55px;
   font-weight: 700;
   letter-spacing: 11px;
@@ -157,7 +161,6 @@ body {
   right: 50%;
   top: 0;
   bottom: 0;
-  width: 0;
   border-left: 2px dashed #fbb100;
 }
 
@@ -168,7 +171,7 @@ body {
 }
 
 .price-new {
-  font-family: ProximaNovaBold;
+  font-family: "ProximaNovaBold";
   color: #ff0072;
   font-size: 36px;
   font-weight: 700;
@@ -199,26 +202,64 @@ body {
   position: relative;
 }
 
+.sale__more {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .sale__button--right {
   position: absolute;
   right: 33px;
   bottom: 22px;
 }
 
-@media (max-width: 1023px) {
-  .sale__item {
-    flex: 1 1 100%;
-    margin-bottom: 24px;
+@media (min-width: 1024px) {
+  .sale__button:hover {
+    background-color: #da0062;
   }
 }
 
-@media (max-width: 599px) {
-  .sale__item--left {
+@media (max-width: 1023px) {
+  .sale__items {
     display: block;
-    padding: 12px 15px 10px 15px;
+  }
+
+  .sale__item {
+    margin-bottom: 24px;
+  }
+
+  .sale__article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sale__timer {
+    margin-top: auto;
+  }
+
+  .sale__price {
+    margin-top: auto;
+    padding-bottom: 5px;
+  }
+
+  .sale__item--right {
+    height: 0;
+    padding-bottom: 52.12%;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .sale__title {
+    font-size: 32px;
   }
 
   .sale__item--left {
+    display: block;
+    padding: 12px 15px 10px 15px;
   }
 
   .sale__img {
