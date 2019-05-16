@@ -1,4 +1,4 @@
-function timer() {
+var timer = function () {
   var hoursLeft = document.querySelector(".js-timer-hours");
   var hoursText = document.querySelector(".js-timer-hours-text");
   var minutesLeft = document.querySelector(".js-timer-minutes");
@@ -50,5 +50,17 @@ function timer() {
     ]);
   });
 }
+
+var priceNewHtml = document.querySelector('.js-price-new');
+var priceOldHtml = document.querySelector('.js-price-old');
+var priceNew = 9999;
+var priceOld = 9999;
+
+var priceFormat = function (price) {
+  return new Intl.NumberFormat('ru-RU').format(price);
+};
+
+priceNewHtml.innerHTML = priceFormat(priceNew);
+priceOldHtml.innerHTML = priceFormat(priceOld);
 
 timer();

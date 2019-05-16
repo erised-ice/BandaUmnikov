@@ -183,6 +183,7 @@ body {
 .price-old {
   position: relative;
   text-transform: uppercase;
+  padding-left: 4px;
 }
 
 .price-old::before {
